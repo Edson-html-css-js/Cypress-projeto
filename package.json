@@ -1,0 +1,14 @@
+{
+  "name": "cypres-projeto",
+  "version": "1.0.0",
+  "description": "cypres",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Edson Lucas",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.1"
+  }
+}
