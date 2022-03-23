@@ -41,4 +41,18 @@ it('Verifica mensagens de senha com menos de 8 caracteres', () => {
    
 })
 
+const usuarios = require('../../fixtures/usuarios.json')
+usuarios.forEach(usuarios => {
+    it.only(`registra novo usuário ${usuarios.userName}` , () => {
+        cy.contains('a', 'Register now').click();
+        cy.contains('button', 'Register').click()
+        cy.get('input[formcontrolname="email"]').type(usuarios.email)
+        cy.get('input[formcontrolname="fullName"]').type(usuarios.fullName)
+        cy.get('input[formcontrolname="userName"]').type(usuarios.userName)
+        cy.get('input[formcontrolname="password"]').type(usuarios.password)
+        cy.contains('button', 'Register').click()
+    })
+});
+
+
 })
