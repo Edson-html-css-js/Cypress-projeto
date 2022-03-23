@@ -9,6 +9,7 @@
   "author": "Edson Lucas",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.5.1"
+    "cypress": "^9.5.1",
+    "mochawesome": "^7.1.2"
   }
 }
