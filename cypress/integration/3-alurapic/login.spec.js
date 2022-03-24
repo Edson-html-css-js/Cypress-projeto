@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('login com sussesso', () => {
+describe('login de usuarios alura pic', () => {
 
 
     beforeEach(() => {
