@@ -17,7 +17,7 @@ describe('login de usuarios alura pic', () => {
         cy.contains('a', '(Logout)').should('be.visible')
 
     })
-it('fazer login de usuario invalido', () =>{
+it.only('fazer login de usuario invalido', () =>{
 cy.login('jaqueline', '1234')
 cy.on ('window:alert', (str) => {
     expect(str).to.equal('Invalid user name or password')

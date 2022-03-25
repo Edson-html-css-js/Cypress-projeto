@@ -35,7 +35,8 @@ it('Verifica mensagens de senha com menos de 8 caracteres', () => {
     cy.contains('ap-vmessage','Mininum length is 8').should('be.visible')
    
 })
-const usuarios = require('../../fixtures/usuarios.json')
+
+const usuarios = require('../fixtures/usuarios.json')
 usuarios.forEach(usuarios => {
     it.only(`registra novo usuário ${usuarios.userName}` , () => {
         cy.contains('a', 'Register now').click();

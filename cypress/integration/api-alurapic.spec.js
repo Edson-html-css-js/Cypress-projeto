@@ -2,8 +2,8 @@
 
 describe('Buscar fotos e dados', ()=> {
 
-    it.only('buscar fotos do flavio', ()=> {
-        const tempoEsperado = Math.random() * 4000;
+    it('buscar fotos do flavio', ()=> {
+        //const tempoEsperado = Math.random() * 10000;
         cy.request({
             method: 'GET',
             url: 'https://apialurapic.herokuapp.com/flavio/photos'
@@ -12,7 +12,7 @@ describe('Buscar fotos e dados', ()=> {
            expect(res.body).is.not.empty
            expect(res.body[0]).to.have.property('description')
            expect(res.body[0].description).to.be.equal('Farol iluminado') 
-           expect(res.duration).to.be.lte(tempoEsperado)//lte siguinifica que o teste rode ne um tempo menor que o tempo passado na const
+           //expect(res.duration).to.be.lte(tempoEsperado)//lte siguinifica que o teste rode ne um tempo menor que o tempo passado na const
                 //exemplo de test flaky, uma hora passa outra não, por conta do tempo setado na const!
         })
     })

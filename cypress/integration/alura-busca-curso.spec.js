@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('alura busca cursos', () => {
+describe.skip('alura busca cursos', () => {
 
 
     beforeEach(() => {
