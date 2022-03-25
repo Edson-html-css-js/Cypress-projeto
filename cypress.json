@@ -8,5 +8,7 @@
         "timestemp":"mmddyyyy_HHMMss"
     
     },
-    "projectId": "ercmvn"
+    "projectId": "ercmvn",
+
+    "baseUrl": "https://alura-fotos.herokuapp.com"
 }
