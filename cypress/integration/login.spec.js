@@ -25,3 +25,5 @@ cy.on ('window:alert', (str) => {
 })
 
 });
+
+//criei uma branch que integrada com jira, pra testa uma coisa
